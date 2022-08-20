@@ -12,22 +12,44 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
     table {
-      width: 500px;
+      width: 400px;
+      height: 250px;
       border-collapse: collapse;
+      margin: auto;
+      position: relative;
     }
     
-
     td,
     th {
       border: 2px solid black;
       padding: 10px;
     }
 
+    caption {
+      font-size:  17px;
+      font-weight: bolder;
+      margin-bottom: 0.4px;
+      padding: 10px;
+      background-color: lightsteelblue;
+      border-radius: 5px 5px 0px 0px;
+      border: 2px solid black;
+    }
+
     thead,
     tfoot {
       background-color: gray;
       color: white;
+    }
+
+    tbody > tr:nth-child(2n) {
+      background-color: rgba(128, 128, 128, 0.467);
     }
 
     .num{
@@ -45,12 +67,15 @@
   <h1>Uso de Tabelas Grandes</h1>
 
   <table>
+    <caption>
+      População das Unidades Federativas
+    </caption>
     <thead>
       <tr>
         <th>
           Estado
         </th>
-        <th>
+        <th style="width: 90px;">
           População
         </th>
       </tr>
@@ -61,21 +86,21 @@
           São Paulo
         </td>
         <td class="num">
-          45 989 231
+          989 231
         </td>
       </tr>
       <td>
         Minas Gerais
       </td>
       <td class="num">
-        578900
+        578 900
       </td>
       <tr>
         <td>
           Rio de Janeiro
         </td>
         <td class="num">
-          781208
+          781 208
         </td>
       </tr>
       <tr>
@@ -83,8 +108,35 @@
           Bahia
         </td>
         <td class="num">
-          589102
+          589 102
         </td>
+      </tr>
+      <tr>
+        <td>Ceará</td>
+        <td class="num">430 922</td>
+        <tr>
+          <td>Amapá</td>
+          <td class="num">
+            321 372
+          </td>
+          <tr>
+            <td>
+              Sergipe
+            </td>
+            <td class="num">
+              788 421
+            </td>
+            <tr>
+              <td>Alagoas</td>
+              <td class="num">821 103</td>
+              <tr>
+                <td>
+                  Espírito Santo
+                </td>
+                <td>389 443</td>
+              </tr>
+          </tr>
+        </tr>
       </tr>
     </tbody>
     <tfoot>
